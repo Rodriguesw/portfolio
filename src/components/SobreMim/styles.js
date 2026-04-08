@@ -15,7 +15,7 @@ export const Container = styled.div`
     background-size: cover;
 `
 
-export const About = styled.div`
+export const Wrapper = styled.div`
     width: 100%;
     height: auto;
 
@@ -84,5 +84,29 @@ export const Description = styled.div`
         >p:nth-of-type(2){
             font-size: 13px;
         }
+    }
+`
+
+export const ContainerBadge = styled.div`
+    width: 100%;
+    height: auto;
+
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+`
+
+export const ButtonDown = styled.button`
+    all: unset;
+    cursor: pointer;
+
+    width: 32px;
+    height: auto;
+
+    >img{
+        width: 100%;
+        height: auto;
     }
 `

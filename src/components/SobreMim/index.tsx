@@ -3,14 +3,23 @@ import * as S from './styles'
 import photo from "../../assets/photo.jpg";
 import iconCode from "../../assets/icon-code.svg";
 
+import github from '../../assets/outhers/github.svg'
+import html from '../../assets/outhers/html.svg'
+import css from '../../assets/outhers/css.svg'
+import js from '../../assets/outhers/javascript.svg'
+import react from '../../assets/outhers/react.svg'
+import node from '../../assets/outhers/node.svg'
+import iconDown from '../../assets/icon-down.svg'
+
 import { theme } from "../../styles/theme";
 import {Subtitle, TextSm, TitleLg} from '../../styles/stylesTypography'
+import Badge from '../Badge';
 
 export default function SobreMim() {
 
   return (
     <S.Container>
-      <S.About>
+      <S.Wrapper>
         <S.Photo>
           <img src={photo} alt="Photo" />
 
@@ -30,7 +39,20 @@ export default function SobreMim() {
             Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da <br/>minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
           </TextSm>
         </S.Description>
-      </S.About>
+
+        <S.ContainerBadge>
+          <Badge image={github} text="Github" />
+          <Badge image={html} text="HTML" />
+          <Badge image={css} text="CSS" />
+          <Badge image={js} text="JavaScript" />
+          <Badge image={react} text="React" />
+          <Badge image={node} text="Node.js" />
+        </S.ContainerBadge>
+
+        <S.ButtonDown onClick={()=>window.location.href = '#projects'}>
+          <img src={iconDown} alt="Icon Down" />
+        </S.ButtonDown>
+      </S.Wrapper>
     </S.Container>
   )
 }
