@@ -1,13 +1,23 @@
 
-import './App.css'
-import { theme } from './styles/theme'
+import Contato from './components/Contato'
+import MeusProjetos from './components/MeusProjetos'
+import MeusServiços from './components/MeusServiços'
+import SobreMim from './components/SobreMim'
+
+import * as S from './styles'
 
 function App() {
 
   return (
-    <p style={{ color: theme.primary }}>
-      Teste
-    </p>
+    <S.Container>
+      <SobreMim />
+
+      <MeusProjetos />
+
+      <MeusServiços />
+
+      <Contato />
+    </S.Container>
   )
 }
 

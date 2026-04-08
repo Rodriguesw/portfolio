@@ -6,7 +6,7 @@ export const TitleLg = styled.h1`
     line-height: ${theme.typography.lineHeight.base};
     font-family: ${theme.typography.fontFamily.asap};
     font-weight:${theme.typography.fontWeight.bold};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `
 
 export const TitleMd = styled.h2`
@@ -14,7 +14,7 @@ export const TitleMd = styled.h2`
     line-height: ${theme.typography.lineHeight.base};
     font-family: ${theme.typography.fontFamily.asap};
     font-weight:${theme.typography.fontWeight.bold};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `
 
 export const TitleSm = styled.h3`
@@ -22,7 +22,7 @@ export const TitleSm = styled.h3`
     line-height: ${theme.typography.lineHeight.base};
     font-family: ${theme.typography.fontFamily.asap};
     font-weight:${theme.typography.fontWeight.bold};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `
 
 // Paragraph
@@ -31,7 +31,7 @@ export const Subtitle = styled.p`
     line-height: ${theme.typography.lineHeight.base};
     font-family: ${theme.typography.fontFamily.inconsolata};
     font-weight:${theme.typography.fontWeight.regular};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `
 
 export const TextMd = styled.p`
@@ -39,7 +39,7 @@ export const TextMd = styled.p`
     line-height: ${theme.typography.lineHeight.medium};
     font-family: ${theme.typography.fontFamily.mavenPro};
     font-weight:${theme.typography.fontWeight.regular};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `
 
 export const TextSm = styled.p`
@@ -47,5 +47,5 @@ export const TextSm = styled.p`
     line-height: ${theme.typography.lineHeight.medium};
     font-family: ${theme.typography.fontFamily.mavenPro};
     font-weight:${theme.typography.fontWeight.regular};
-    color: ${ props => props.color || theme.colors.gray.gray900};
+    color: ${ props => props.color ? props.color : theme.color.gray.gray100};
 `

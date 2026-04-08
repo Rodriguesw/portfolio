@@ -16,9 +16,9 @@ export const theme = {
     },
     typography: {
         fontFamily: {
-            asap: 'Asap Sans',
-            inconsolata: 'Inconsolata',
-            mavenPro: 'Maven Pro',
+            asap: "'Asap Sans', sans-serif",
+            inconsolata: "'Inconsolata', monospace",
+            mavenPro: "'Maven Pro', sans-serif",
         },
         fontSize: {
             small: '14px',

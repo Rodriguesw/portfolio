@@ -3,3 +3,87 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'Asap Sans';
+  src: url('./styles/fonts/asap/Asap-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asap Sans';
+  src: url('./styles/fonts/asap/Asap-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asap Sans';
+  src: url('./styles/fonts/asap/Asap-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asap Sans';
+  src: url('./styles/fonts/asap/Asap-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asap Sans';
+  src: url('./styles/fonts/asap/Asap-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./styles/fonts/inconsolata/Inconsolata-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('./styles/fonts/mavenPro/MavenPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('./styles/fonts/mavenPro/MavenPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('./styles/fonts/mavenPro/MavenPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('./styles/fonts/mavenPro/MavenPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
