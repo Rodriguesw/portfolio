@@ -1,20 +1,18 @@
 
-import { Subtitle, TitleMd } from '../../styles/stylesTypography'
-import { theme } from '../../styles/theme'
 import ViewProjects from '../ViewProjects'
-import * as S from './styles'
-
-import bg1 from '../../assets/bg1.png'
 import TitleAndDescription from '../TitleAndDescription'
 
-export default function MeusProjetos() {
+import bg1 from '../../assets/bg1.png'
 
+import * as S from './styles'
+
+export default function MeusProjetos() {
   return (
     <S.Container>
       <S.Wrapper id="projects">
         <TitleAndDescription 
-        title="Meu trabalho" 
-        description="Veja os projetos em destaque" 
+          title="Meu trabalho" 
+          description="Veja os projetos em destaque" 
         />
 
         <S.ContainerProjects>

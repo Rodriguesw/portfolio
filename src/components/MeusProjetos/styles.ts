@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     width: 100%;
     height: auto;
-    padding: 72px;
+    padding: 32px 12px;
 
     gap: 56px;
     display: flex;
@@ -41,8 +41,8 @@ export const ContainerProjects = styled.div`
     max-width: 1040px;
 
     gap: 24px;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 `

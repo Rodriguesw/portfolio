@@ -5,7 +5,7 @@ import {theme} from "../../styles/theme";
 export const Container = styled.div`
     width: 100%;
     height: 750px;
-    padding: 64px 16px 32px;
+    padding: 64px 12px 32px;
 
     display: flex;
     align-items: center;

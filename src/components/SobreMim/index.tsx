@@ -1,19 +1,19 @@
 
-import * as S from './styles'
-import photo from "../../assets/photo.jpg";
-import iconCode from "../../assets/icon-code.svg";
-
-import github from '../../assets/outhers/github.svg'
-import html from '../../assets/outhers/html.svg'
-import css from '../../assets/outhers/css.svg'
-import js from '../../assets/outhers/javascript.svg'
-import react from '../../assets/outhers/react.svg'
-import node from '../../assets/outhers/node.svg'
-import iconDown from '../../assets/icon-down.svg'
-
-import { theme } from "../../styles/theme";
-import {Subtitle, TextSm, TitleLg} from '../../styles/stylesTypography'
 import Badge from '../Badge';
+
+import photo from "../../assets/photo.jpg";
+import css from '../../assets/outhers/css.svg';
+import html from '../../assets/outhers/html.svg';
+import node from '../../assets/outhers/node.svg';
+import iconDown from '../../assets/icon-down.svg';
+import iconCode from "../../assets/icon-code.svg";
+import react from '../../assets/outhers/react.svg';
+import js from '../../assets/outhers/javascript.svg';
+import github from '../../assets/outhers/github.svg';
+
+import * as S from './styles';
+import { theme } from "../../styles/theme";
+import {Subtitle, TextSm, TitleLg} from '../../styles/stylesTypography';
 
 export default function SobreMim() {
   const handleScrollToProjects = () => {
@@ -35,7 +35,7 @@ export default function SobreMim() {
 
         <S.Description>
           <Subtitle color={theme.color.gray.gray200}>
-           Hello World! Meu nome é <span style={{color: theme.color.red}}>Matheus Henrique</span> e sou 
+            Hello World! Meu nome é <span style={{color: theme.color.red}}>Matheus Henrique</span> e sou 
           </Subtitle>
 
           <TitleLg color={theme.color.gray.gray200}>

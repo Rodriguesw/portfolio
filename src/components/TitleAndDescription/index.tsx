@@ -1,7 +1,7 @@
 
-import { Subtitle, TitleMd } from '../../styles/stylesTypography'
-import { theme } from '../../styles/theme'
 import * as S from './styles'
+import { theme } from '../../styles/theme'
+import { Subtitle, TextSm, TitleMd } from '../../styles/stylesTypography'
 
 interface TitleAndDescriptionProps {
   title: string
@@ -11,7 +11,6 @@ interface TitleAndDescriptionProps {
 }
 
 export default function TitleAndDescription(props: TitleAndDescriptionProps) {
-
   return (
     <S.Container>
       <Subtitle color={theme.color.gray.gray200}>
@@ -22,9 +21,9 @@ export default function TitleAndDescription(props: TitleAndDescriptionProps) {
         {props.description}
       </TitleMd>
 
-       <TitleMd color={theme.color.gray.gray100} fontSize={theme.typography.fontSize.small}>
+       <TextSm color={theme.color.gray.gray300}>
         {props.subDescription}
-      </TitleMd>
+      </TextSm>
     </S.Container>
   )
 }

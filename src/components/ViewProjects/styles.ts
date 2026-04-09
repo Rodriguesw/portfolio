@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bg2 from "../../assets/bg-2.png";
 import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
@@ -23,6 +22,10 @@ export const Container = styled.div`
 
        border-radius: 8px;
     }
+
+    @media (max-width: 479px) {
+        max-width: 100%;
+    }
 `
 
 export const Description = styled.div`
@@ -34,4 +37,9 @@ export const Description = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    >p:first-child{
+        font-size: 16px;
+        font-weight: 600;
+    }
 `
