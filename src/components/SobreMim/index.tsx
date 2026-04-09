@@ -16,6 +16,13 @@ import {Subtitle, TextSm, TitleLg} from '../../styles/stylesTypography'
 import Badge from '../Badge';
 
 export default function SobreMim() {
+  const handleScrollToProjects = () => {
+    const target = document.getElementById('projects')
+    if (!target) return
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.history.replaceState(null, '', '#projects')
+  }
 
   return (
     <S.Container>
@@ -49,7 +56,7 @@ export default function SobreMim() {
           <Badge image={node} text="Node.js" />
         </S.ContainerBadge>
 
-        <S.ButtonDown onClick={()=>window.location.href = '#projects'}>
+        <S.ButtonDown onClick={handleScrollToProjects}>
           <img src={iconDown} alt="Icon Down" />
         </S.ButtonDown>
       </S.Wrapper>

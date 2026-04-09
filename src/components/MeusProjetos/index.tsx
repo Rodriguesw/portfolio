@@ -1,22 +1,30 @@
 
 import { Subtitle, TitleMd } from '../../styles/stylesTypography'
 import { theme } from '../../styles/theme'
+import ViewProjects from '../ViewProjects'
 import * as S from './styles'
+
+import bg1 from '../../assets/bg1.png'
+import TitleAndDescription from '../TitleAndDescription'
 
 export default function MeusProjetos() {
 
   return (
     <S.Container>
-      <S.Wrapper>
-        <S.Description>
-          <Subtitle color={theme.color.gray.gray200}>
-           <span style={{color: theme.color.red}}>Meu trabalho</span>
-          </Subtitle>
+      <S.Wrapper id="projects">
+        <TitleAndDescription 
+        title="Meu trabalho" 
+        description="Veja os projetos em destaque" 
+        />
 
-          <TitleMd color={theme.color.gray.gray100}>
-            Veja os projetos em destaque
-          </TitleMd>
-        </S.Description>
+        <S.ContainerProjects>
+          <ViewProjects image={bg1} title="Projeto 1" description="Rede social onde as pessoas mostram os registros de suas viagens pelo mundo" />
+          <ViewProjects image={bg1} title="Projeto 2" description="Aplicação de gerenciamento de tarefas" />
+          <ViewProjects image={bg1} title="Projeto 3" description="Plataforma de aprendizagem" />
+          <ViewProjects image={bg1} title="Projeto 4" description="Sistema de gerenciamento de projetos" />
+          <ViewProjects image={bg1} title="Projeto 5" description="Aplicação de gerenciamento de recursos humanos" />
+          <ViewProjects image={bg1} title="Projeto 6" description="Plataforma de aprendizagem" />
+        </S.ContainerProjects>
       </S.Wrapper>
     </S.Container>
   )

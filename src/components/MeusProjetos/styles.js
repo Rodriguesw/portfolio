@@ -34,3 +34,15 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: center;
 `
+
+export const ContainerProjects = styled.div`
+    width: 100%;
+    height: auto;
+    max-width: 1040px;
+
+    gap: 24px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
